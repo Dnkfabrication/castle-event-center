@@ -366,18 +366,18 @@
           <a href="https://maps.google.com/?q=6417+County+Road+7620+Lubbock+TX+79424" rel="noopener">6417 County Road 7620, Lubbock, TX 79424</a></div>
       </div>
     </div>
-    <form class="inquiry" action="https://formspree.io/f/xzdydozz" method="POST">
-      <!-- INTERIM WIRING: posts to the DNK Formspree account, which Dylan monitors and
-           forwards. Swap this action to the Castle's own Formspree (delivering straight to
-           ceclubbock@gmail.com) once that account exists — task t1785954612722100. -->
+    <form class="inquiry" action="https://formspree.io/f/moeaqkwj" method="POST">
+      <!-- Castle's own Formspree account; delivers straight to ceclubbock@gmail.com. -->
       <input type="hidden" name="_subject" value="CASTLE EVENT CENTER — website inquiry">
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <div class="frow">
-        <label>Name<input type="text" name="name" required></label>
-        <label>Phone<input type="tel" name="phone" required></label>
+        <label>Name<input type="text" name="name" required autocomplete="name"></label>
+        <label>Phone<input type="tel" name="phone" required autocomplete="tel"
+          inputmode="tel" placeholder="(806) 555-0142"></label>
       </div>
       <div class="frow">
-        <label>Email<input type="email" name="email"></label>
+        <label>Email<input type="email" name="email" autocomplete="email"
+          inputmode="email"></label>
         <label>Event date<input type="date" name="event_date"></label>
       </div>
       <div class="frow">
