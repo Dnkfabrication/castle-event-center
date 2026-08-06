@@ -73,12 +73,12 @@
   .nav-name { font-family: 'Cormorant Garamond', serif; color: var(--parchment);
     text-decoration: none; font-size: 1.35rem; letter-spacing: 0.14em; text-transform: uppercase; }
   .nav-name span { color: var(--gold-bright); }
-  .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
-  .nav-links a { color: #cfc8ba; text-decoration: none; font-size: 0.72rem;
-    letter-spacing: 0.22em; text-transform: uppercase; font-weight: 500; }
+  .nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
+  .nav-links a { color: #cfc8ba; text-decoration: none; font-size: 0.68rem;
+    letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; white-space: nowrap; }
   .nav-links a:hover { color: var(--gold-bright); }
   .nav-cta { border: 1px solid var(--gold); padding: 0.5rem 1.1rem; color: var(--gold-bright) !important; }
-  @media (max-width: 860px) { .nav-links li:not(:last-child) { display: none; } }
+  @media (max-width: 1000px) { .nav-links li:not(:last-child) { display: none; } }
 
   .hero { position: relative; min-height: 92vh; display: flex; align-items: center;
     justify-content: center; text-align: center; color: var(--parchment);
@@ -162,6 +162,7 @@
   footer { background: #211d17; color: #8d8574; text-align: center;
     padding: 2.2rem 1.5rem; font-size: 0.78rem; letter-spacing: 0.06em; }
   footer .crown { color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 1rem; letter-spacing: 0.2em; }
+  .service-area { max-width: 720px; margin: 0.9rem auto 0; color: #786f5e; font-size: 0.82rem; line-height: 1.7; }
 </style>
 </head>
 <body>
@@ -170,9 +171,12 @@
   <a href="#top" class="nav-name">Castle <span>Event Center</span></a>
   <ul class="nav-links">
     <li><a href="#venue">The Venue</a></li>
-    <li><a href="#weddings">Weddings</a></li>
-    <li><a href="#packages">Packages</a></li>
-    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="/weddings/">Weddings</a></li>
+    <li><a href="/quinceaneras/">Quincea&ntilde;eras</a></li>
+    <li><a href="/corporate-events/">Corporate Events</a></li>
+    <li><a href="/celebrations-of-life/">Celebrations of Life</a></li>
+    <li><a href="/packages/">Packages</a></li>
+    <li><a href="/gallery/">Gallery</a></li>
     <li><a href="tel:8062243927" class="nav-cta">(806) 224-3927</a></li>
   </ul>
 </nav>
@@ -223,6 +227,26 @@
       <div class="event-cell"><h3>Birthdays &amp; Parties</h3><p>Milestones of every kind</p></div>
       <div class="event-cell"><h3>Corporate &amp; More</h3><p>Meetings, banquets, celebrations of all types</p></div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Beyond the Wedding</div>
+    <h2>The Castle Hosts More Than Weddings</h2>
+    <div class="rule"></div>
+    <p class="lead">As an event hall, the Great Hall does double duty well past wedding season.
+      Families book baby showers and bridal showers here for the same fountains and stone walls
+      that make wedding photos look different. Anniversary parties bring couples back years after
+      their wedding day to celebrate in the same hall where they said their vows. Company holiday
+      parties fill the Great Hall every December for a christmas party that doesn't look like a
+      hotel ballroom, and extended families use the grounds for a family reunion too large for
+      anyone's backyard. See dedicated pages for <a href="/weddings/" style="color:var(--burgundy)">weddings</a>,
+      <a href="/quinceaneras/" style="color:var(--burgundy)">quincea&ntilde;eras</a>,
+      <a href="/corporate-events/" style="color:var(--burgundy)">corporate events</a>, and
+      <a href="/celebrations-of-life/" style="color:var(--burgundy)">celebrations of life</a>, or view
+      the full <a href="/packages/" style="color:var(--burgundy)">package pricing</a> and
+      <a href="/gallery/" style="color:var(--burgundy)">photo gallery</a>.</p>
   </div>
 </section>
 
@@ -410,6 +434,8 @@
 <footer>
   <div class="crown">CASTLE EVENT CENTER</div>
   <div style="margin-top:0.5rem">Weddings &middot; Receptions &middot; Events &middot; Lubbock, Texas</div>
+  <div class="service-area">Proudly serving Lubbock, Wolfforth, Shallowater, Slaton, Levelland, Brownfield,
+    Plainview, and Idalou, Texas, and the surrounding South Plains communities.</div>
   <div style="margin-top:0.9rem">&copy; 2026 Castle Event Center &middot; (806) 224-3927</div>
 </footer>
 
